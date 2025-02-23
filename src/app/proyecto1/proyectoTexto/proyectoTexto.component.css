@@ -5,3 +5,14 @@
     justify-content: right;
     background-color: #f0f0f0;
   }
+
+  .row.leer {
+    background: none;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    top: 90%;
+    z-index: 100000; 
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center;
+    
+  }
