@@ -1,0 +1,28 @@
+
+
+  <div class="row">
+    <div *ngIf="selected; else noSedeSelected">
+      <app-proyecto [proyecto]="selectedProyecto"></app-proyecto>
+  </div>
+  <ng-template  #noSedeSelected>
+  <div class="container-fluid" style="margin-right: 0%;  margin-top: 8.5%; margin-bottom:2%; " >
+  <div class="row" style="width: 86%; margin-left: 3%" >
+      <div class="col-4" *ngFor="let proyecto of proyectos" >
+          <div class="card card-border" style="width: 350px; height: 450px;  background-color: #0d77e0;    margin-top: 5%; margin-bottom:5%;" (click)="onSelected(proyecto)">
+            <img
+              class="card-img-top"
+              src="{{ proyecto.imagen }}"
+              alt="{{ proyecto.nombre }}"
+              
+            />
+            <div class="card-body" (click)="onSelected(proyecto)">
+              <h5 class="card-title">{{ proyecto.nombre }}</h5>
+              <p class="card-text">{{ proyecto.subtitulo }}</p>
+              
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+</ng-template>

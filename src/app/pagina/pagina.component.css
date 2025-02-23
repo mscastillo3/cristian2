@@ -1,0 +1,12 @@
+.card-border {
+  border: 1px solid transparent; /* Puedes ajustar el color y el grosor del borde según tus necesidades */
+  border-radius: 5px; /* Opcional: para bordes redondeados */
+}
+.container-fluid {
+  overflow: hidden; /* Oculta el desbordamiento */
+}
+
+.col-4 {
+  padding-left: 100px; /* Ajusta el valor de padding según tus necesidades */
+  padding-right: 100px; /* Ajusta el valor de padding según tus necesidades */
+}

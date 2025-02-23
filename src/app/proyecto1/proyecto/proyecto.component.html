@@ -1,0 +1,34 @@
+<div class="row">
+  <div *ngIf="selected; else noSedeSelected">
+    <app-proyectoTexto [proyecto]="proyecto"></app-proyectoTexto>
+    <div class="row leer">
+    <button class="button" (click)=onSelected2() id = "a"> fotos </button>
+  </div>
+  </div>
+</div>
+<ng-template #noSedeSelected>
+  <div class="row nombre">
+    {{ proyecto.nombre }}
+  </div>
+  <div class="container-fluid"
+    style=" margin-top: 6%; margin-bottom:2%; width: 1200px; height:550px; margin-right: 7.5%">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{fotoSelected}}" id="imagenC" />
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" id="i"
+      (click)="prev()">
+
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"
+      (click)="next()">
+
+    </button>
+  </div>
+  <div class="row leer">
+    <button class="button" (click)=onSelected()> read more </button>
+  </div>
+</ng-template>

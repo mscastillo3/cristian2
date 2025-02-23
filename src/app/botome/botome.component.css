@@ -1,0 +1,14 @@
+.button {
+    background: none;
+    border: none;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+.navbar {
+    height: 15%; 
+    width: 100%; 
+    position: fixed;
+    top: 90%;
+}
